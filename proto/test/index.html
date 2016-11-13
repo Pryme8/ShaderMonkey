@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ShaderMonkey</title>
+<style>
+html, body{
+min-height:100%;
+height:100%;
+width:100%;
+margin:0; padding:0;	
+}
+.editor-block{
+	width:100%;
+	height:auto;
+	display:block;
+	position:relative;
+	margin:0; padding:0;
+	overflow:hidden;
+	overflow-Y:auto;
+}
+.head-block{
+  display:block;
+  padding:0.35em;
+  background:rgba(0,0,0,0.5);
+  color:white;
+}
+
+
+</style>
+<link rel="stylesheet" href="./css/codemirror.css">
+<link href="./css/dialog.css" rel="stylesheet" type="text/css" />
+<link href="./css/foldgutter.css" rel="stylesheet" type="text/css" />
+<link href="./css/show-hint.css" rel="stylesheet" type="text/css" />
+<link href="./css/theme/rubyblue.css" rel="stylesheet" type="text/css" />
+<link href="./css/theme/erlang-dark.css" rel="stylesheet" type="text/css" />
+
+
+
+<script src="./js/codemirror.js"></script>
+<script src="./js/webGL-clike.js"></script>
+<script src="./js/javascript.js"></script>
+<script src="./js/search.js"></script>
+<script src="./js/searchcursor.js"></script>
+<script src="./js/comment.js"></script>
+<script src="./js/closebrackets.js"></script>
+<script src="./js/dialog.js"></script>
+<script src="./js/foldcode.js"></script>
+<script src="./js/foldgutter.js"></script>
+<script src="./js/hardwrap.js"></script>
+<script src="./js/indent-fold.js"></script>
+<script src="./js/javascript-hint.js"></script>
+<script src="./js/matchbrackets.js"></script>
+<script src="./js/panel.js"></script>
+<script src="./js/rulers.js"></script>
+<script src="./js/search.js"></script>
+<script src="./js/searchcursor.js"></script>
+<script src="./js/show-hint.js"></script>
+
+<script src="./shaderMonkey.js"></script>
+
+</head>
+
+<body>
+<div class='head-block'><span>x-shader</span><span></span></div>
+<div class='editor-block' id='x-shade'></div>
+<div class='head-block'>frag-shader</div>
+<div class='editor-block' id='frag-shade'></div>
+<div class='head-block'>Scene Editor</div>
+<div class='editor-block' id='scene-editor'></div>
+
+<script>
+//import 'codemirror/mode/clike/clike.js';
+document.addEventListener( 'DOMContentLoaded', function () {
+
+var editor = new MNKY();
+
+
+},false);
+</script>
+</body>
+</html>
